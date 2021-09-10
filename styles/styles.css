@@ -1,0 +1,153 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: -30%;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align:center;
+}
+
+.card {
+    width: 400px;
+    height: 620px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 75px auto;
+    overflow:hidden;
+
+}
+.header {
+    width: 100%;
+    height: 30%;
+}
+
+.header img {
+    width: 100%;
+    
+}
+
+.content {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+.information h1 {
+    font-weight: 900;
+    margin: 40px 0 0 0;
+}
+
+.information p {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 10px;
+}
+
+.plan_details {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    font-size: 16px;
+}
+.plan_price {
+    text-align: left;
+}
+.plan_price p {
+    margin: 0;
+}
+ p:first-child {
+    font-weight: 900;
+    margin-bottom: 0;
+ }
+ p:last-child {
+    color: hsl(224, 23%, 55%);
+ }
+ .plan_details a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+ }
+ .plan_details a:hover{
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+ }
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.button {
+    background-color:hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    height: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    box-shadow: 0px 20px 15px 2px hsl(223, 47%, 23%, 0.15);
+    cursor: pointer;
+}
+.button:hover{
+    background-color:hsl(245, 75%, 52%, 0.60);
+}
+.cancel_a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 30px;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.cancel_a:hover{
+    color: black;
+}
+.attribution{
+    margin-bottom: 50px;
+}
+
+@media (max-width:375px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .card {
+        width: 330px;
+        height: 550px;
+    }
+    .content {
+        gap: 20px;
+        padding: 0 30px;  
+    }
+    .information h1 {
+        font-weight: 900;
+        margin: 0;
+        font-size: 25px;
+    }
+    .plan_details {
+        width: 270px;
+        align-self: center;
+        padding: 15px 10px;
+        grid-gap: 10px;
+    }
+    .button {
+        width: 270px;
+        margin: 5px 0;
+    }
+}
